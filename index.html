@@ -1,1 +1,260 @@
-Hello World
+<!DOCTYPE html>
+<html ng-app="ionicApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <title>Tabs Example</title>
+<script>
+/* Modernizr 2.6.2 (Custom Build) | MIT & BSD
+ * Build: http://modernizr.com/download/#-fontface-cssclasses-addtest-prefixed-teststyles-testprop-testallprops-hasevent-prefixes-domprefixes
+ */
+;window.Modernizr=function(a,b,c){function A(a){j.cssText=a}function B(a,b){return A(m.join(a+";")+(b||""))}function C(a,b){return typeof a===b}function D(a,b){return!!~(""+a).indexOf(b)}function E(a,b){for(var d in a){var e=a[d];if(!D(e,"-")&&j[e]!==c)return b=="pfx"?e:!0}return!1}function F(a,b,d){for(var e in a){var f=b[a[e]];if(f!==c)return d===!1?a[e]:C(f,"function")?f.bind(d||b):f}return!1}function G(a,b,c){var d=a.charAt(0).toUpperCase()+a.slice(1),e=(a+" "+o.join(d+" ")+d).split(" ");return C(b,"string")||C(b,"undefined")?E(e,b):(e=(a+" "+p.join(d+" ")+d).split(" "),F(e,b,c))}var d="2.6.2",e={},f=!0,g=b.documentElement,h="modernizr",i=b.createElement(h),j=i.style,k,l={}.toString,m=" -webkit- -moz- -o- -ms- ".split(" "),n="Webkit Moz O ms",o=n.split(" "),p=n.toLowerCase().split(" "),q={},r={},s={},t=[],u=t.slice,v,w=function(a,c,d,e){var f,i,j,k,l=b.createElement("div"),m=b.body,n=m||b.createElement("body");if(parseInt(d,10))while(d--)j=b.createElement("div"),j.id=e?e[d]:h+(d+1),l.appendChild(j);return f=["&#173;",'<style id="s',h,'">',a,"</style>"].join(""),l.id=h,(m?l:n).innerHTML+=f,n.appendChild(l),m||(n.style.background="",n.style.overflow="hidden",k=g.style.overflow,g.style.overflow="hidden",g.appendChild(n)),i=c(l,a),m?l.parentNode.removeChild(l):(n.parentNode.removeChild(n),g.style.overflow=k),!!i},x=function(){function d(d,e){e=e||b.createElement(a[d]||"div"),d="on"+d;var f=d in e;return f||(e.setAttribute||(e=b.createElement("div")),e.setAttribute&&e.removeAttribute&&(e.setAttribute(d,""),f=C(e[d],"function"),C(e[d],"undefined")||(e[d]=c),e.removeAttribute(d))),e=null,f}var a={select:"input",change:"input",submit:"form",reset:"form",error:"img",load:"img",abort:"img"};return d}(),y={}.hasOwnProperty,z;!C(y,"undefined")&&!C(y.call,"undefined")?z=function(a,b){return y.call(a,b)}:z=function(a,b){return b in a&&C(a.constructor.prototype[b],"undefined")},Function.prototype.bind||(Function.prototype.bind=function(b){var c=this;if(typeof c!="function")throw new TypeError;var d=u.call(arguments,1),e=function(){if(this instanceof e){var a=function(){};a.prototype=c.prototype;var f=new a,g=c.apply(f,d.concat(u.call(arguments)));return Object(g)===g?g:f}return c.apply(b,d.concat(u.call(arguments)))};return e}),q.fontface=function(){var a;return w('@font-face {font-family:"font";src:url("https://")}',function(c,d){var e=b.getElementById("smodernizr"),f=e.sheet||e.styleSheet,g=f?f.cssRules&&f.cssRules[0]?f.cssRules[0].cssText:f.cssText||"":"";a=/src/i.test(g)&&g.indexOf(d.split(" ")[0])===0}),a};for(var H in q)z(q,H)&&(v=H.toLowerCase(),e[v]=q[H](),t.push((e[v]?"":"no-")+v));return e.addTest=function(a,b){if(typeof a=="object")for(var d in a)z(a,d)&&e.addTest(d,a[d]);else{a=a.toLowerCase();if(e[a]!==c)return e;b=typeof b=="function"?b():b,typeof f!="undefined"&&f&&(g.className+=" "+(b?"":"no-")+a),e[a]=b}return e},A(""),i=k=null,e._version=d,e._prefixes=m,e._domPrefixes=p,e._cssomPrefixes=o,e.hasEvent=x,e.testProp=function(a){return E([a])},e.testAllProps=G,e.testStyles=w,e.prefixed=function(a,b,c){return b?G(a,b,c):G(a,"pfx")},g.className=g.className.replace(/(^|\s)no-js(\s|$)/,"$1$2")+(f?" js "+t.join(" "):""),e}(this,this.document);
+</script>
+
+    <style type="text/css">
+      /* Prevent copy paste for all elements except text fields */
+      *  { -webkit-user-select:none; -webkit-tap-highlight-color:rgba(255, 255, 255, 0); }
+      input, textarea  { -webkit-user-select:text; }
+    </style>
+    <script src="intelxdk.js"></script>
+    <script type="text/javascript">
+      /* Intel native bridge is available */
+      var onDeviceReady=function(){
+      //hide splash screen
+      intel.xdk.device.hideSplashScreen();
+      };
+      document.addEventListener("intel.xdk.device.ready",onDeviceReady,false);
+    </script>    
+    <script src="js/moment.js"></script>
+    <link href="css/ionic.css" rel="stylesheet">
+    <script src="js/ionic.bundle.js"></script>
+    <script src="js/guid.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/services.js"></script>
+    
+  </head>
+
+  <body>
+    
+    <ion-nav-bar class="nav-title-slide-ios7 bar-positive">
+      <ion-nav-back-button class="button-icon ion-arrow-left-c">
+      </ion-nav-back-button>
+    </ion-nav-bar>
+             
+    <ion-nav-view animation="slide-left-right"></ion-nav-view>
+
+
+    <script id="tabs.html" type="text/ng-template">
+      <ion-tabs class="tabs-icon-top tabs-positive">
+
+        <ion-tab title="Home" icon="ion-home" href="#/tab/home">
+          <ion-nav-view name="home-tab" animation="slide-left-right"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="Sobre" icon="ion-ios7-information" href="#/tab/about">
+          <ion-nav-view name="about-tab" animation="slide-left-right"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="Configuração" icon="ion-gear-a" href="#/tab/config">
+          <ion-nav-view name="config-tab" animation="slide-left-right"></ion-nav-view>
+        </ion-tab>        
+      </ion-tabs>
+    </script>
+
+<script id="config.html" type="text/ng-template">
+
+   <ion-view title="Configuração">
+    <form name="form">
+      <ion-nav-buttons side="right">
+        <button class="button button-calm" ng-disabled="form.$invalid" ng-click="save(config)">
+          Salvar
+        </button>
+      </ion-nav-buttons>            
+      <ion-content>
+        <div class="list">
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Dias para vencimento</span>
+            <input type="text" placeholder="Mínimo de dias para entrar na lista"  ng-model="config.quantidade_dias_validade"  required>
+          </label>
+        </div>
+      </ion-content>
+    </form>
+  </ion-view>
+ 
+  </div>
+</script>      
+
+    <script id="home.html" type="text/ng-template">
+      <ion-view title="iDepensa">
+        <ion-nav-buttons side="right">
+          <a class="button button-icon button-clear ion-navicon-round"  ng-click="openPopover($event)">
+          </a>
+        </ion-nav-buttons>       
+        <ion-content>
+          <div class="list">
+            <div class="item" ng-show="listaVazia()">
+                <p> Não há itens para exibição</p>
+            </div>          
+            <a class="item slide-in-left"  
+              ng-repeat="item in items | filter:{nome: modal.searchText}" ng-click="openModal(item)" gesture-on-hold="showActionsheet(item)">
+              {{item.nome}}
+              <span class="item-note">
+                {{item.quantidade}}
+              </span>              
+            </a>
+          </div>    
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script id="menu.html" type="text/ng-template">
+      <ion-popover-view>
+        <ion-header-bar>
+          <h1 class="title">Menu</h1>
+        </ion-header-bar>
+        <ion-content>
+          <div class="list">
+
+            <a class="item"  ng-click="goProduto()">
+              <i class="icon ion-plus-round"></i>
+              Adicionar
+            </a>
+            <a class="item"  ng-click="goDespensa()">
+              <i class="icon ion-social-buffer"></i>
+              Despensa
+            </a>            
+            <a class="item"  ng-click="goLista()">
+              <i class="icon ion-ios7-cart"></i>
+              Lista de Compras
+            </a>
+            <a class="item"  ng-click="goVencendo()">
+            <i class="icon ion-calendar"></i>
+              Itens Vencendo
+            </a>            
+          </div>
+        </ion-content>
+      </ion-popover-view>
+    </script>    
+
+    <script id="quantidade.html" type="text/ng-template">
+        <ion-modal-view>
+          <div class="bar bar-header bar-positive">
+            <h1 class="title">Quantidade</h1>
+          </div>
+          <ion-content>
+            <div class="card" style="margin-top:20%;">
+              <div class="item item-divider">
+                <i class="icon ion-grid"></i>
+                {{produto.nome}}
+              </div>
+              <div class="item item-body">
+                <div class="list" >
+               
+                  <div class="item" >
+                    <h1>  Quantidade: {{produto.quantidade}} </h1>
+                    <div class="button-bar">
+                      <button class="button button-small button-positive" ng-click="add(produto)">adiciona</button>
+                      <button class="button button-small button-positive" ng-click="remove(produto)">retira</button>
+                    </div>                  
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </ion-content>
+          <div class="tabs tabs-icon-only tabs-positive">
+            <a class="tab-item" ng-click="closeModal()">
+              <i class="icon ion-close-round"></i>
+            </a>
+          </div>  
+        </ion-modal-view>
+    </script>    
+
+    <script id="produto.html" type="text/ng-template">
+
+       <ion-view title="Adicionar">
+          <form name="formProduto">
+            <ion-nav-buttons side="right">
+              <button class="button button-calm" ng-disabled="formProduto.$invalid" ng-click="save(produto)">
+                Salvar
+              </button>
+            </ion-nav-buttons>         
+            <ion-content >
+              <div class="card">
+                <div class="item item-divider">
+                  Produto
+                </div>
+                <div class="item item-body">
+                  <div class="list">
+                    <label class="item item-input item-stacked-label">
+                      <span class="input-label">Nome</span>
+                      <input type="text" placeholder="Nome do produto. Ex Arroz 5kg"  ng-model="produto.nome" ng-minlength="3"  required>
+                    </label>
+                    <label class="item item-input item-stacked-label">
+                      <span class="input-label">Quantidade</span>
+                      <input type="number" min="0" placeholder="quantidade" ng-model="produto.quantidade" required>
+                    </label>            
+                    <label class="item item-input item-stacked-label">
+                      <span class="input-label">Data de validade</span>
+                      <input type="date" ng-model="produto.data_validade" required>
+                    </label>
+                    <label class="item item-input">
+                      <div class="input-label">
+                        Lista de Compras
+                      </div>                
+                      <label class="toggle">
+                         <input type="checkbox" ng-model="produto.lista_automatico">
+                         <div class="track">
+                           <div class="handle"></div>
+                         </div>
+                      </label>
+                    </label>
+                    <label class="item item-input item-stacked-label" ng-show="produto.lista_automatico">
+                      <span class="input-label">Quantidade</span>
+                      <input type="number" min="0" placeholder="quantidade p/ entrar na lista" ng-model="produto.quantidade_lista">
+                    </label>                  
+                  </div>
+                </div>
+              </div>
+            </ion-content>
+          </form>
+        </ion-view>
+     
+    </script>        
+
+    <script id="about.html" type="text/ng-template">
+      <ion-view title="Sobre">
+        <ion-content class="padding">
+          <h3>iDespensa</h3>
+          <p>Versão: 1.0.0.1</p>
+          <p>Controle a sua despensa.</p>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script id="nav-stack.html" type="text/ng-template">
+      <ion-view title="Tab Nav Stack">
+        <ion-content class="padding">
+          <p><img src="http://ionicframework.com/img/diagrams/tabs-nav-stack.png" style="width:100%"></p>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script id="contact.html" type="text/ng-template">
+      <ion-view title="Contact">
+        <ion-content>
+          <div class="list">
+            <div class="item">
+              @IonicFramework
+            </div>
+            <div class="item">
+              @DriftyTeam
+            </div>
+          </div>
+        </ion-content>
+      </ion-view>
+    </script>
+
+  </body>
+</html>
